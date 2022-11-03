@@ -10,6 +10,7 @@
   --custom-blue: #3161e0;
   --custom-gray: #f6f6f6;
   --custom-black: #23272a;
+  --custom-lightblue: #7289da;
 }
 
 /* Generics */
@@ -21,8 +22,18 @@ h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-size: 3em;
+  padding: 0 50px;
+}
+
+h3 {
+  padding: 10px;
+}
+
 p {
   padding: 25px;
+  line-height: 25px;
 }
 
 /* Utils */
@@ -61,11 +72,23 @@ button {
 }
 
 .bg-gray {
-  background-color: lightgray;
+  background-color: var(--custom-gray);
+}
+
+.bg-stars {
+  background-image: url('../img/stars.svg');
+  background-repeat: no-repeat;
+  background-size: 37%;
+  background-position: 50%;
 }
 
 header {
   background-color: var(--custom-blue);
+}
+
+.download {
+  background-color: var(--custom-lightblue);
+  color: white;
 }
 
 /* # Navbar */
@@ -131,11 +154,14 @@ header {
 /* # Main & sections */
 section {
   padding: 50px;
-  height: 600px;
 }
 
 section > .container {
   height: 100%;
+}
+
+.small-col > p {
+  padding: 25px 53px;
 }
 
 .flex > .small-col {
@@ -150,7 +176,7 @@ section > .container {
 
 .flex > .full-col {
   flex-basis: 100%;
-  background-color: darkgreen;
+  text-align: center;
 }
 
 /* # Footer */
