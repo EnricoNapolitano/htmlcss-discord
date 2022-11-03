@@ -80,6 +80,10 @@ button {
   background-color: var(--custom-gray);
 }
 
+.first.bg-gray {
+  margin-bottom: -6px;
+}
+
 .last.bg-gray {
   padding-bottom: 100px;
 }
