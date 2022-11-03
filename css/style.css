@@ -5,9 +5,24 @@
   box-sizing: border-box;
 }
 
+/* Color Palette */
+:root {
+  --custom-blue: #3161e0;
+  --custom-gray: #f6f6f6;
+  --custom-black: #23272a;
+}
+
 /* Generics */
 body {
   font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  padding: 25px;
 }
 
 /* Utils */
@@ -15,6 +30,14 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+button {
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .flex {
@@ -38,7 +61,7 @@ body {
 }
 
 header {
-  background-color: lightblue;
+  background-color: var(--custom-blue);
 }
 
 /* # Navbar */
@@ -70,18 +93,24 @@ header {
 
 .jumbotron {
   padding: 50px;
-  height: 500px;
-  background-color: darkblue;
+  height: 600px;
+  background-image: url('../img/jumbo.png');
+  background-size: cover;
+  text-align: center;
+  color: white;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .jumbotron .content {
   width: 50%;
-  /* height: 100%; */
-  /* margin: 0 auto; */
-  background-color: violet;
+}
+
+.black-button {
+  background-color: var(--custom-black);
+  color: white;
 }
 
 /* # Main & sections */
