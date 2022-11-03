@@ -28,7 +28,11 @@ h2 {
 }
 
 h3 {
-  padding: 10px;
+  padding: 25px;
+}
+
+h4 {
+  color: var(--custom-lightblue);
 }
 
 p {
@@ -86,9 +90,13 @@ header {
   background-color: var(--custom-blue);
 }
 
-.download {
+.download, .subscription {
   background-color: var(--custom-lightblue);
   color: white;
+}
+
+.flag {
+  width: 25px;
 }
 
 /* # Navbar */
@@ -154,6 +162,7 @@ header {
 /* # Main & sections */
 section {
   padding: 50px;
+  margin-bottom: 50px;
 }
 
 section > .container {
@@ -183,27 +192,8 @@ section > .container {
 
 footer {
   padding: 50px;
-  background-color: #23272a;
-  /* color: white; */
-}
-
-.footer-top {
-  height: 600px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid purple;
-
-  display: flex;
-}
-
-.footer-top .footer-left {
-  flex-basis: 30%;
-  background-color: pink;
-}
-
-.footer-top .footer-right {
-  flex-basis: 70%;
-  background-color: #20b2aa;
+  background-color: var(--custom-black);
+  color: white;
 }
 
 .footer-nav {
@@ -216,15 +206,62 @@ footer {
   flex-basis: 25%;
 }
 
+.footer-top {
+
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+
+  display: flex;
+}
+
+.footer-top .footer-left {
+  flex-basis: 30%;
+}
+
+.footer-top .footer-right {
+  flex-basis: 70%;
+}
+
+.h3-footer {
+  padding: 0;
+  font-size: 2em;
+}
+
+.info-footer {
+  padding: 45px;
+  padding-bottom: 0;
+}
+
+.info-footer.right > * {
+  padding-bottom: 11px;
+}
+
+.info-footer.right a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.language {
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+.icon {
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: aquamarine;
 }
 
-.footer-bottom > * {
-  padding: 5px 10px;
-  background-color: yellow;
-}
+
+
+
