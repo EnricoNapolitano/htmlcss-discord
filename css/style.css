@@ -44,6 +44,10 @@ button {
   display: flex;
 }
 
+.flex.gap {
+  gap: 30px;
+}
+
 .flex.row-reverse {
   flex-direction: row-reverse;
 }
@@ -77,12 +81,17 @@ header {
 .navbar > * {
   padding: 10px;
   flex-basis: 20%;
-  background-color: goldenrod;
 }
 
 .navbar-menu {
   flex-grow: 1;
   text-align: center;
+}
+
+.navbar-menu > a {
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar-actions {
@@ -111,6 +120,12 @@ header {
 .black-button {
   background-color: var(--custom-black);
   color: white;
+}
+
+.flex-button-gap {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
 }
 
 /* # Main & sections */
