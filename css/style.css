@@ -73,10 +73,15 @@ button {
 
 .bg-white {
   background-color: white;
+  padding: 80px 0;
 }
 
 .bg-gray {
   background-color: var(--custom-gray);
+}
+
+.last.bg-gray {
+  padding-bottom: 100px;
 }
 
 .bg-stars {
@@ -101,6 +106,23 @@ header {
 
 .flag {
   width: 25px;
+}
+
+.wave-container {
+margin-bottom: 80px;
+}
+
+.bottom-wave-container {
+  margin-top: 80px;
+}
+
+.wave {
+  transform: rotate(180deg);
+  filter: invert(100%);
+}
+
+.bottom-wave {
+  filter: invert(100%);
 }
 
 /* # Navbar */
@@ -164,9 +186,9 @@ header {
 }
 
 /* # Main & sections */
-section {
+/* section {
   padding: 100px;
-}
+} */
 
 section > .container {
   height: 100%;
@@ -200,7 +222,6 @@ footer {
 .footer-nav {
   height: 100%;
   display: flex;
-  /* background-color: #fff; */
 }
 
 .footer-nav > div {
